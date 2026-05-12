@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: django-todo-app
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn todo.wsgi:application"
+    
